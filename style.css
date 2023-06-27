@@ -181,22 +181,28 @@ li{
     border-style: none;
     color: white;
     font-family: 'Roboto';
-    border-radius: 20px;
+    border-radius: 50px;
     height: 5vh;
     padding: 1vh 3vh 1vh 3vh;
 }
 
-.buttons button:hover{
+.buttons button:hover,
+.search-bar button:hover{
     background-color: #1877F2;
 }
 
 .project-div{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    grid-template-rows: repeat(3, 200px);
+    height: 100%;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 1rem 200px 200px 200px;
     padding-top: 10px;
     font-weight: lighter;
     gap: 10px;
+}
+
+.project-title{
+    grid-column: 1 / 3;
 }
 
 .content{
@@ -209,11 +215,10 @@ li{
     justify-items: center;
     background-color: white;
     border-radius: 10px;
-    border-left: 10px solid #FFC61B;
+    border-left: 10px solid #F0B429;
 }
 
 .projects img {
-
     width: 70%;
 }
 
