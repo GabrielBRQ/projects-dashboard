@@ -213,6 +213,7 @@ li{
 .projects{
     display: grid;
     justify-items: center;
+    align-items: end;
     background-color: white;
     border-radius: 10px;
     border-left: 10px solid #F0B429;
@@ -224,4 +225,5 @@ li{
 
 .projects:hover{
     border-left: 10px solid #5b9ef0;
+    background-color: rgb(221, 219, 219);
 }
