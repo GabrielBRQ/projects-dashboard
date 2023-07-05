@@ -330,24 +330,58 @@ a{
     .ancmt-div,
     .trending-div,
     .news,
-    .search-box,
-    .buttons{
+    .search-box{
         display: none;
     }
-    
+
     .left-side p {
         font-size: 2vh;
     }
 
     .bottom-header{
         align-items: center;
-        padding: 2vw;
+        padding: 1vh;
     }
+
     .hamburger{
         display: block;
         cursor: pointer;
     }
     
+    .buttons{
+        flex-direction: column;
+        background-color: #5b9ef0;
+        position: absolute;
+        top:12vh;
+        left: 0;
+        width: 100vw;
+        height: 0;
+        overflow: hidden;
+    }
+
+        
+    .buttons button{
+        background-color: #5b9ef0;
+        display: block;
+        width: fit-content;
+        width: 30vw;
+        opacity: 0;
+    }
+
+    .buttons button:hover{
+        background-color: white;
+        color: #5b9ef0;
+    }
+
+    .buttons.active{
+        height: auto;
+    }
+
+    .buttons.active button{
+        opacity: 1;
+    }
+
+
     .hamburger .line{
         width: 4vh;
         height: .4vh;
@@ -359,6 +393,9 @@ a{
         width: 45vw;
     }
 
+    .greetings a{
+        justify-content: start;
+    }
     .content{
         grid-template-columns: 100%;
         height: 170vh;
